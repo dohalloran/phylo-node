@@ -1,6 +1,6 @@
 # __Phylo-Node__
 
-[![NPM version](http://img.shields.io/npm/v/phylo-node.svg)](https://www.npmjs.org/package/phylo-node) 
+[![NPM version](http://img.shields.io/npm/v/phylo-node.svg)](https://www.npmjs.org/package/Phylo-Node) 
 
 __Phylo-Node: a molecular phylogenetic toolkit using Node.js__
 
