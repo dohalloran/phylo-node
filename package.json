@@ -1,5 +1,5 @@
 {
-    "name": "Phylo-Node",
+    "name": "phylo-node",
     "description": "Node-Phylo: a molecular phylogenetic toolkit using Node.js",
     "version": "0.0.4",
     "homepage": "https://github.com/dohalloran/phylo-node",
