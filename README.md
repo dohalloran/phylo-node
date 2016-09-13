@@ -4,7 +4,7 @@
 
 __Phylo-Node: a molecular phylogenetic toolkit using Node.js__
 
-![Phylo-Node LOGO](https://cloud.githubusercontent.com/assets/8477977/17537261/163d3450-5e69-11e6-9fef-fdb04c4fe4c5.png)
+![Phylo-Node LOGO](https://cloud.githubusercontent.com/assets/8477977/18491220/619a5754-79d3-11e6-916e-92e189e0072b.png)
 
 # __CONTENTS__
 - - - - 
