@@ -25,7 +25,7 @@
         "download": "^5.0.2"
     },
     "scripts": {
-        "test": "mocha test/index_test.js"
+        "test": "mocha Test/index_test.js"
     },
     "keywords": [
     "DNA",
