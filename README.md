@@ -30,7 +30,7 @@ __Phylo-Node: a molecular phylogenetic toolkit using Node.js__
  
 __Click on Demo to get full length video__ 
 
- [![Demo Video](https://j.gifs.com/82rVX5.gif)](https://www.youtube.com/watch?v=bkH-TcItlZs)   
+ [![Demo Video](https://j.gifs.com/82rVX5.gif)](https://www.youtube.com/watch?v=I29OiUfmJwM)   
  
 - - - - 
 
