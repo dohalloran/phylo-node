@@ -2,6 +2,9 @@
 
 [![NPM version](http://img.shields.io/npm/v/phylo-node.svg)](https://www.npmjs.com/package/phylo-node) 
 ![dependencies](https://david-dm.org/dohalloran/phylo-node.svg)
+![devDependency Status](https://img.shields.io/badge/devDependencies-up%20to%20date%20-brightgreen.svg)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/dohalloran/Phylo-Node/master/LICENSE)
+[![GitHub issues](https://img.shields.io/github/issues/dohalloran/Phylo-Node.svg)](https://github.com/dohalloran/Phylo-Node/issues)
 
 __Phylo-Node: a molecular phylogenetic toolkit using Node.js__
 
