@@ -2,7 +2,7 @@
 
 [![NPM version](http://img.shields.io/npm/v/phylo-node.svg)](https://www.npmjs.com/package/phylo-node) 
 [![dependencies](https://david-dm.org/dohalloran/phylo-node.svg)](https://david-dm.org/dohalloran/Phylo-Node?view=list)
-![devDependency Status](https://img.shields.io/badge/devDependencies-up%20to%20date%20-brightgreen.svg)
+[![devDependency Status](https://img.shields.io/badge/devDependencies-up%20to%20date%20-brightgreen.svg)](https://david-dm.org/dohalloran/Phylo-Node?type=dev&view=list)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/dohalloran/Phylo-Node/master/LICENSE)
 [![GitHub issues](https://img.shields.io/github/issues/dohalloran/Phylo-Node.svg)](https://github.com/dohalloran/Phylo-Node/issues)
 [![DOI](https://zenodo.org/badge/68146573.svg)](https://zenodo.org/badge/latestdoi/68146573)
