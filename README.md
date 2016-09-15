@@ -22,6 +22,7 @@ __Phylo-Node: a molecular phylogenetic toolkit using Node.js__
 		- [Primer3](#primer3)
 		- [MUSCLE](#muscle)
         - [Clustal Omega](#clustal-omega)
+        - [Kalign](#kalign)
         - [ProtTest3](#prottest3)
         - [Pipes](#pipes)
 	- [Testing](#testing)
@@ -214,6 +215,32 @@ node index.js inputfile [insert any flags preceeded by '--' sign and seperated b
 | --max-guidetree-iterations |  Maximum guide tree iterations                                                         | 
 | --max-hmm-iterations       | Maximum number of HMM iterations                                                       |
 
+
+### Kalign
+
+Run Clustal Omega program
+
+    var base = require('../../../Wrapper_Core/base-wrap')
+    var kalign = require('./kalign.js')
+    var outFile = './Output/kalign_Result.aln'
+    base.call_(process.argv[2], outFile, process.argv, kalign.run_)
+
+
+__Basic usage:__
+node index.js inputfile [insert any flags preceeded by '-' sign and seperated by a space]
+    
+    node index.js DNA.fasta -gpo -f 
+   
+| FLAG     | FUNCTION                                                                      | 
+| -------- |:-----------------------------------------------------------------------------:| 
+| -gpo     | Gap open penalty (default 6.0).                                               | 
+| -gpe     | Gap extension penalty (default 0.9).                                          | 
+| -p       | Wu-Manber algorithm used in both distance calculation and dynamic programming | 
+| -w       | Wu-Manber algorithm not used at all                                           | 
+| -f       |  fast heuristic alignment                                                     | 
+| -q       |  'quiet' - no messages are sent to standard error                             |
+
+
 ### ProtTest3
 
 Run ProtTest3 program
@@ -302,7 +329,9 @@ __Note:__ if you get a permission error when runnning tests you may have to `chm
 
 5. Sievers F, Wilm A, Dineen DG, Gibson TJ, Karplus K, Li W, Lopez R, McWilliam H, Remmert M, Söding J, Thompson JD, Higgins DG (2011). Fast, scalable generation of high-quality protein multiple sequence alignments using Clustal Omega. Molecular Systems Biology 7:539 
 
-6. Darriba D, Taboada GL, Doallo R, Posada D. ProtTest 3: fast selection of best-fit models of protein evolution. Bioinformatics, 27:1164-1165, 2011  
+6. Lassmann T, Sonnhammer EL. (2005). Kalign--an accurate and fast multiple sequence alignment algorithm. BMC Bioinformatics. 12;6:298.
+
+7. Darriba D, Taboada GL, Doallo R, Posada D. (2011). ProtTest 3: fast selection of best-fit models of protein evolution. Bioinformatics, 27:1164-1165 
 
 
 
