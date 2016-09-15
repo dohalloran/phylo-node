@@ -298,30 +298,34 @@ node index.js path-to-jar input-file -o output-file [insert any flags (from flag
     node index.js /path-to-jar/jModelTest.jar aP6.fas -o Output/Results.txt -f -i -g 4 -s 11 -AIC -a
     
 
-| FLAG                  | DETAILS                                           | 
-| --------------------- |:-------------------------------------------------:| 
-|    -i                 |            alignment_filename                     | 
-|    -t                 |            tree_filename (optional)               |  
-|    -o                 |            output_filename (optional)             | 
-|     -[matrix]         |            Include matrix (Amino-acid)            | 
-|    -I                 |    models with a proportion of invariable sites   | 
-|    -G                 |   rate variation among sites and categories       | 
-|    -IG                |           models with both +I and +G              | 
-|    -all-distributions |  rate variation among sites, categories and both  | 
-|    -ncat              |           number of categories                    |     
-|    -F                 |   models with empirical frequency estimation      | 
-|    -AIC               |          Akaike Information Criterion             | 
-|    -BIC               |          Bayesian Information Criterion           | 
-|    -AICC              |       Corrected Akaike Information Criterion      | 
-|    -DT                |          Decision Theory Criterion                | 
-|    -all               |          7-framework comparison table             | 
-|    -S                 |       Optimization strategy mode: [default: 0]    | 
-|    -s                 |          Tree search operation for ML search      | 
-|    -t1                |          Display best-model's newick tree         | 
-|    -t2                |          Display best-model's ASCII tree          | 
-|    -tc                |  Display consensus tree with specified threshold  | 
-|    -threads           |       Number of threads requested to compute      | 
-|    -verbose           |       Verbose mode [default: false]               | 
+| FLAG              | DETAILS                                                                | 
+| ------------------|:----------------------------------------------------------------------:| 
+|    -a             |           Estimate model-averaged phylogeny for each active criterion  | 
+|    -t             |           Base tree for likelihood calculations (e.g., -t BIONJ)       |  
+|    -o             |           outputFile                                                   | 
+|    -i             |           Include models with a proportion invariable sites            | 
+|    -machinesfile  |           Gets the processors per host from a machines file            | 
+|    -g             |           numberOfRateCategories                                       | 
+|    -getPhylip     |           Converts the input file into phylip format and exits         | 
+|    -G             |           threshold                                                    |     
+|    -h             |           confidenceInterval                                           | 
+|    -AIC           |           Akaike Information Criterion                                 | 
+|    -BIC           |           Bayesian Information Criterion                               | 
+|    -AICc          |           Corrected Akaike Information Criterion                       | 
+|    -hLRT          |           Perform hierarchical likelihood ratio tests                  | 
+|    -DT            |           Calculate the decision theory criterion                      | 
+|    -f             |           Include models with unequals base frecuencies                | 
+|    -H             |           Information criterion for clustering search                  | 
+|    -n             |           logSuffix                                                    | 
+|    -O             |           Sets the hypothesis order for the hLRTs                      | 
+|    -p             |           Calculate the parameter importances                          | 
+|    -tr            |           Number of threads requested to compute                       | 
+|    -v             |           Do model averaging and parameter importances                 |
+|    -s             |           Sets the number of substitution schemes                      |
+|    -u             |           treefile                                                     | 
+|    -uLNL          |           Calculate delta AIC,AICc,BIC against unconstrained likelihood| 
+|    -w             |           Prints out the PAUP block                                    | 
+|    -z             |           Strict consensus type for model-averaged phylogeny           |
 
 
 __Note:__ must have Java Runtime environment and [jModelTest2 jar] (https://github.com/ddarriba/jmodeltest2)
