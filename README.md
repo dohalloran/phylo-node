@@ -218,7 +218,7 @@ node index.js inputfile [insert any flags preceeded by '--' sign and seperated b
 
 ### Kalign
 
-Run Clustal Omega program
+Run Kalign program
 
     var base = require('../../../Wrapper_Core/base-wrap')
     var kalign = require('./kalign.js')
