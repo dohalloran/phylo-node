@@ -24,6 +24,7 @@ __Phylo-Node: a molecular phylogenetic toolkit using Node.js__
         - [Clustal Omega](#clustal-omega)
         - [Kalign](#kalign)
         - [ProtTest3](#prottest3)
+        - [jModelTest2](#jmodeltest2)
         - [Pipes](#pipes)
 	- [Testing](#testing)
     - [Documentation](#documentation)
@@ -252,7 +253,7 @@ Run ProtTest3 program
 __Basic usage:__ 
 node index.js path-to-jar input-file [insert any flags (from flags below)] 
 
-    node index_prottest.js /path-to-jar/prottest-3.4.2.jar alignment -all-matrices -all-distributions -o example.txt
+    node index.js /path-to-jar/prottest-3.4.2.jar alignment -all-matrices -all-distributions -o example.txt
 
 | FLAG                  | DETAILS                                           | 
 | --------------------- |:-------------------------------------------------:| 
@@ -281,6 +282,49 @@ node index.js path-to-jar input-file [insert any flags (from flags below)]
 
 
 __Note:__ must have Java Runtime environment and [ProtTest3 jar] (https://github.com/ddarriba/prottest3)
+
+
+### jModelTest2
+
+Run jModelTest2 program
+
+    var base = require('../../../Wrapper_Core/base-wrap')
+    var jmodeltest2 = require('./jmodeltest2')
+    base.call_(process.argv[2], process.argv[3], process.argv, jmodeltest2.run_)
+
+__Basic usage:__ 
+node index.js path-to-jar input-file -o output-file [insert any flags (from flags below)] 
+
+    node index.js /path-to-jar/jModelTest.jar aP6.fas -o Output/Results.txt -f -i -g 4 -s 11 -AIC -a
+    
+
+| FLAG                  | DETAILS                                           | 
+| --------------------- |:-------------------------------------------------:| 
+|    -i                 |            alignment_filename                     | 
+|    -t                 |            tree_filename (optional)               |  
+|    -o                 |            output_filename (optional)             | 
+|     -[matrix]         |            Include matrix (Amino-acid)            | 
+|    -I                 |    models with a proportion of invariable sites   | 
+|    -G                 |   rate variation among sites and categories       | 
+|    -IG                |           models with both +I and +G              | 
+|    -all-distributions |  rate variation among sites, categories and both  | 
+|    -ncat              |           number of categories                    |     
+|    -F                 |   models with empirical frequency estimation      | 
+|    -AIC               |          Akaike Information Criterion             | 
+|    -BIC               |          Bayesian Information Criterion           | 
+|    -AICC              |       Corrected Akaike Information Criterion      | 
+|    -DT                |          Decision Theory Criterion                | 
+|    -all               |          7-framework comparison table             | 
+|    -S                 |       Optimization strategy mode: [default: 0]    | 
+|    -s                 |          Tree search operation for ML search      | 
+|    -t1                |          Display best-model's newick tree         | 
+|    -t2                |          Display best-model's ASCII tree          | 
+|    -tc                |  Display consensus tree with specified threshold  | 
+|    -threads           |       Number of threads requested to compute      | 
+|    -verbose           |       Verbose mode [default: false]               | 
+
+
+__Note:__ must have Java Runtime environment and [jModelTest2 jar] (https://github.com/ddarriba/jmodeltest2)
 
 ## Pipes 
 Commands can be chained in series to pipe data between applications:
@@ -333,6 +377,7 @@ __Note:__ if you get a permission error when runnning tests you may have to `chm
 
 7. Darriba D, Taboada GL, Doallo R, Posada D. (2011). ProtTest 3: fast selection of best-fit models of protein evolution. Bioinformatics, 27:1164-1165 
 
+8. Darriba D, Taboada GL, Doallo R, Posada D. (2012). jModelTest 2: more models, new heuristics and parallel computing. Nature Methods 9(8), 772.
 
 
 - - - - 
