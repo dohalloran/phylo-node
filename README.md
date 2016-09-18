@@ -18,7 +18,7 @@ __Phylo-Node: a molecular phylogenetic toolkit using Node.js__
 	- [Usage](#usage)
         - [Get FASTA Sequences](#get-fasta-sequences)
         - [Get Sequence information in JSON format](#get-sequence-information-in-json-format)
-        - [Download executables](#Download-executables)
+        - [Download executables](#download-executables)
 		- [PhyML](#phyml)
 		- [Primer3](#primer3)
 		- [MUSCLE](#muscle)
