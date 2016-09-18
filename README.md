@@ -17,7 +17,8 @@ __Phylo-Node: a molecular phylogenetic toolkit using Node.js__
 	- [Getting Started](#getting-started)
 	- [Usage](#usage)
         - [Get FASTA Sequences](#get-fasta-sequences)
-        - [Get Sequence information in JSON format](#get-sequence-information-in-json-format) 
+        - [Get Sequence information in JSON format](#get-sequence-information-in-json-format)
+        - [Download executables](#Download-executables)
 		- [PhyML](#phyml)
 		- [Primer3](#primer3)
 		- [MUSCLE](#muscle)
@@ -75,6 +76,19 @@ Sequence Accession Numbers are collected as per fastA sequences above using the 
 __Basic usage:__ node index.js inputfile [list of space separated accession numbers]
 
     node index.js NM_001028053.2 AF032112.1
+
+### Download executables
+
+Download executable files:
+    
+    var get_executable = require('./get_executable.js')
+    get_executable.software(process.argv[2])
+    
+__Basic usage:__ node index.js URL
+
+    node index.js http://www.clustal.org/omega/clustalo-1.2.2-Ubuntu-x86_64
+    
+ __Note:__ objects for other tools i.e. PhyML, Clustal Omega, and MUSCLE contain their own methods for downloading binaries (see below)    
 
 ### PhyML
 
