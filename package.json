@@ -28,11 +28,11 @@
         "test": "mocha Test/index_test.js"
     },
     "keywords": [
-    "DNA",
-    "fastA",
+    "biojs",
+    "bionode",
     "alignment",
     "phylogeny",
-    "primer design"
+    "DNA"
   ],
     "license": "MIT",
     "devDependencies": {
