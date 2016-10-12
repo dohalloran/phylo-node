@@ -24,6 +24,7 @@ __Phylo-Node: a molecular phylogenetic toolkit using Node.js__
 		- [MUSCLE](#muscle)
         - [Clustal Omega](#clustal-omega)
         - [Kalign](#kalign)
+        - [PAL2NAL](#pal2nal)
         - [ProtTest3](#prottest3)
         - [jModelTest2](#jmodeltest2)
         - [Pipes](#pipes)
@@ -256,6 +257,37 @@ node index.js inputfile [insert any flags preceeded by '-' sign and seperated by
 | -q       |  'quiet' - no messages are sent to standard error                             |
 
 
+### PAL2NAL
+
+Run PAL2NAL program
+
+    var base = require('../../../Wrapper_Core/base-wrap')
+    var pal2nal = require('./pal2nal.js')
+    var outFile = './Output/result.codon'
+    base.call_(process.argv[2], outFile, process.argv, pal2nal.run_)
+
+
+__Basic usage:__
+node index.js input.aln input.fasta [insert any flags from below]
+    
+    node index.js DNA.aln DNA.fasta -nomismatch 
+  
+  
+| FLAG        | FUNCTION                                                                        | 
+| ----------- |:-------------------------------------------------------------------------------:| 
+| -h          | show help                                                                       | 
+| -blockonly  | Show only user specified blocks                                                 | 
+| -output     | (clustal|paml|fasta|codon) Output format, default = clustal                     | 
+| -nogap      |  remove columns with gaps and inframe stop codons                               | 
+| -nomismatch | remove mismatched codons (mismatch between pep and cDNA) from the output        | 
+| -codontable | (1(default)|2|3|4|5|6|9|10|11|12|13|14|15|16|21|22|23) NCBI GenBank codon table | 
+| -html       | HTML output (only for the web server)                                           | 
+| -nostderr   | No STDERR messages (only for the web server)                                    | 
+
+
+__Note:__ must have Perl installed 
+
+
 ### ProtTest3
 
 Run ProtTest3 program
@@ -393,10 +425,11 @@ __Note:__ if you get a permission error when runnning tests you may have to `chm
 
 6. Lassmann T, Sonnhammer EL. (2005). Kalign--an accurate and fast multiple sequence alignment algorithm. BMC Bioinformatics. 12;6:298
 
-7. Darriba D, Taboada GL, Doallo R, Posada D. (2011). ProtTest 3: fast selection of best-fit models of protein evolution. Bioinformatics, 27:1164-1165 
+7. Suyama M, Torrents D, Bork P (2006). PAL2NAL: robust conversion of protein sequence alignment into the corresponding codon alignments. Nucleic Acids Res. 34:W609-W612
 
-8. Darriba D, Taboada GL, Doallo R, Posada D. (2012). jModelTest 2: more models, new heuristics and parallel computing. Nature Methods 9(8), 772
+8. Darriba D, Taboada GL, Doallo R, Posada D. (2011). ProtTest 3: fast selection of best-fit models of protein evolution. Bioinformatics, 27:1164-1165 
 
+9. Darriba D, Taboada GL, Doallo R, Posada D. (2012). jModelTest 2: more models, new heuristics and parallel computing. Nature Methods 9(8), 772
 
 - - - - 
 ## Contributing
