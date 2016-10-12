@@ -280,7 +280,7 @@ node index.js input.aln input.fasta [insert any flags from below]
 | -output     | (clustal|paml|fasta|codon) Output format, default = clustal                     | 
 | -nogap      |  remove columns with gaps and inframe stop codons                               | 
 | -nomismatch | remove mismatched codons (mismatch between pep and cDNA) from the output        | 
-| -codontable | (1(default)|2|3|4|5|6|9|10|11|12|13|14|15|16|21|22|23) NCBI GenBank codon table | 
+| -codontable | 1 default|2|3|4|5|6|9|10|11|12|13|14|15|16|21|22|23   NCBI GenBank codon table  | 
 | -html       | HTML output (only for the web server)                                           | 
 | -nostderr   | No STDERR messages (only for the web server)                                    | 
 
