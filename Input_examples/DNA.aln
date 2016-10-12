@@ -1,0 +1,157 @@
+CLUSTAL multiple sequence alignment by MUSCLE (3.8)
+
+
+gene2           ------------------------------------------------------------
+gene1           ----------------------------------------MSSGSRPSSGG---------
+gene3           MALVGVDFQAPLRIVSRVQFGILGPEEIKRMSVAHVEFPEVYENGKPKLGGLMDPRQGVI
+                                                                            
+
+gene2           ------------------------------------------------------------
+gene1           -GGGGGGASGGAGGGAPGGGGGG-------IRGFFSK-----------------------
+gene3           DRRGRCMTCAGNLTDCPGHFGHLELAKPVFHIGFLTKTLKILRCVCFYCGRLLIDKSAPR
+                                                                            
+
+gene2           -------------------------------------------------MSKATSACSQK
+gene1           --------------------------------------LRKPSDQP--NGNQVQVGTRTF
+gene3           VLEILKKTGTNSKKRLTMIYDLCKAKSVCEGAAEKEEGMPDDPDDPMNDGKKVAGGCGRY
+                                                                  .:.  .    
+
+gene2           KTS--------------------------------------------LL-----------
+gene1           EAH----------ELQK------------------------------LIPQLEEAISRKD
+gene3           QPSYRRVGIDINAEWKKNVNEDTQERKIMLTAERVLEVFQQITDEDILVIGMDPQFARPE
+                :.                                             *:           
+
+gene2           ---------DPSPKKSSVIE-TTTKKTSGIESKLLP-----NELPSTGTTGT--------
+gene1           ---------AQLRQQQTIVE-GHIKRISELEGEVTTLQRECDKLR---------SVLEQK
+gene3           WMICTVLPVPPLAVRPAVVTFGSAKNQDDLTHKLSDIIKTNQQLQRNEANGAAAHVLTDD
+                              . :::     *. . :  ::       ::*                
+
+gene2           --------------------SGVKNGASSPKTSP----------------------AKTT
+gene1           AQ------------------SAASPGGQPPSPSP----------RTDQLGN--DLQQKAV
+gene3           VRLLQFHVATLVDNCIPGLPTATQKGGRPLKSIKQRLKGKEGRIRGNLMGKRVDFSARTV
+                                    :... *. . ..                         .:.
+
+gene2           TTTT-------TVVTQKVSNQPTAPISTLP------------------------------
+gene1           LPAD--------GVQR--AKKIAVSAEPTNFE----------------------------
+gene3           ITADPNLPIDTVGVPRTIAQNLTFPEIVTPFNVDKLQELVNRGDTQYPGAKYIIRENGAR
+                 .:          * .  ::: : .                                   
+
+gene2           --------------------------------PRKPT-----------------------
+gene1           --------------------------------NKPATLQ---------------------
+gene3           VDLRYHPRAADLHLQPGYRVERHMKDGDIIVFNRQPTLHKMSMMGHRVKILPWSTFRMNL
+                                                 . .*                       
+
+gene2           --------------------------------AQKSRELSPPKAKKS-------------
+gene1           -----------------HYNKTVGAKQMIRD-AVQKNDFLKQLAKEQIIELVN---CMYE
+gene3           SVTSPYNADFDGDEMNLHLPQSLETRAEIEEIAMVPRQLITPQANKPVMGIVQDTLCAVR
+                                                *   .::    *::              
+
+gene2           -----------------------------------PSPSRTGS-----------------
+gene1           MRARAGQWV-----------------------IQEGEP---GDRLF-VVAEGELQVSR--
+gene3           MMTKRDVFIDWPFMMDLLMYLPTWDGKVPQPAILKPKPLWTGKQVFSLIIPGNVNVLRTH
+                                                    .*   *.                 
+
+gene2           ---------------------------------------GD-------------------
+gene1           -------------------------EGALLGKMRAGTVMGE----------LAILYNCTR
+gene3           STHPDSEDSGPYKWISPGDTKVIIEHGELLSGIVCSKTVGKSAGNLLHVVTLELGYEIAA
+                                                       *.                   
+
+gene2           ----------------------------SGSRKESSASRKDSSKTEKLVKDLENV-----
+gene1           TASVQALTDVQLWVL-------------DRSVFQMITQRLGMERHSQLMNFLTKV-----
+gene3           NFYSHIQTVINAWLIREGHTIGIGDTIADQATYLDIQNTIRKAKQ-DVVDVIEKAHNDDL
+                                            . :      .     .  .::. : :.     
+
+gene2           --------------KLEK-----------------------------GDSRESATLPTPK
+gene1           -----SIFQNLSEDRISK-MADVMDQ---------DYYDGGHYIIRQGEKGDAFFVINSG
+gene3           EPTPGNTLRQTFENKVNQILNDARDRTGSSAQKSLSEFNNFKSMVVSGSKGSKINISQVI
+                              .:.:                             *.. .   :    
+
+gene2           QYPASDDEEDTKERKSLRF--------------------------GTTTEWQ--------
+gene1           QVKVTQQIEGETEPREIRV--------------------------LNQGDFF-----GER
+gene3           ACVGQQNVEGKRIPFGFRHRTLPHFIKDDYGPESKGFVENSYLAGLTPSEFFFHAMGGRE
+                     :: *.      :*                            .  ::         
+
+gene2           -----------------------------------------------SDNLEEFYREHEK
+gene1           ALLGEEVRTA-------------------------NIIAQ-------APGVEVLTLDRES
+gene3           GLIDTAVKTAETGYIQRRLIKAMESVMVNYDGTVRNSLAQMVQLRYGEDGLDGMWVENQN
+                                                                 .:: :  :.:.
+
+gene2           FPN---------------------------------------------------------
+gene1           FGKL--------------IGDLESLKKDYG--------------------------DKER
+gene3           MPTMKPNNAVFERDFRMDLTDNKFLRKNYSEDVVREIQESEDGISLVESEWSQLEEDRRL
+                : .                                                         
+
+gene2           ------------------------------------------------------------
+gene1           LAQV----------------------------VREPP--SPVKIVDDFRE----------
+gene3           LRKIFPRGDAKIVLPCNLQRLIWNAQKIFKVDLRKPVNLSPLHVISGVRELSKKLIIVSG
+                                                                            
+
+gene2           ------------------------------------------------------------
+gene1           -------------------------------------------------EFAQVTLKNVK
+gene3           NDEISKQAQYNATLLMNILLRSTLCTKNMCTKSKLNSEAFDWLLGEIESRFQQAIAQPGE
+                                                                            
+
+gene2           ---AEAVKKFGQ-----------------------MYSMTELI-----------------
+gene1           RLATLGVGGFGR------VELVCVNGDKAKTFALKALKKKHIV-----------------
+gene3           MVGALAAQSLGEPATQMTLNTFHYAGVSAKNVTLGVPRLKEIINVSKTLKTPSLTVFLTG
+                   : ..  :*                            . ::                 
+
+gene2           -------------------------------------------AETWL------------
+gene1           ----DTRQQEHIFAE---------------------RNIMMETSTDWIVKLY--------
+gene3           AAAKDPEKAKDVLCKLEHTTLKKVTCNTAIYYDPDPKNTVIAEDEEWVSIFYEMPDHDLS
+                                                              *:            
+
+gene2           -------------ETRRQQTYQKYV----------------------------------E
+gene1           -------------KTFRDQKF-VYMLLEVCLGG---------------ELWTTLR----D
+gene3           RTSPWLLRIELDRKRMVDKKLTMEMIADRIHGGFGNDVHTIYTDDNAEKLVFRLRIAGED
+                             :   ::.    :                                  :
+
+gene2           KG----LQTDPSVIQFYCESLKI-------AEGLR------LENPSIQTKSFFSLNGVNA
+gene1           RG-----HFDDYTARFYVACV---------LEGLE-----YLHRKNIVYRD---LKPENC
+gene3           KGEAQEEQVDKMEDDVFLRCIEANMLSDLTLQGIPAISKVYMNQPNTDDKKRIIITPEGG
+                .*     : *     .:  .:          :*:       : . .   ..   :.  . 
+
+gene2           LEQKKE--EEEKMQPVISVSSNKV----------------FISPK-----KEQKCQLTIK
+gene1           LLANTGYLKLVDFGFAKKLASGRK-------TWTFCGTPEYVSPEII---LNKGHDQA--
+gene3           FKSVADWILETDGTALLRVLSERQIDPVRTTSNDICEIFEVLGIEAVRKAIEREMDNVIS
+                :          .      : * .                  :. :      :.  : .  
+
+gene2           NDGEVNVVYQISI---------------------------MNAANYVMS-----------
+gene1           -----ADYWALGIYICELM---------------------LGRPPFQAS-----------
+gene3           FDGSYVNYRHLAL-LCDVMTAKGHLMAITRHGINRQEVGALMRCSFEETVDILMEAAVHA
+                          :.:                           :    :  :           
+
+gene2           ---PI------------------CAILLP---KEELTLNITRK-----------------
+gene1           --DPMK-----------------TYTLIL---KGVDALEIPNRRI---------------
+gene3           EEDPVKGVSENIMLGQLARCGTGCFDLVLDVEKCKYGMEIPQNVVMGGGFYGSFAGSPSN
+                   *:                     *:    *    ::*...                 
+
+gene2           ---------------------------PGKLLEEEFFRI---------------------
+gene1           ------------GKTATALVKKLCRDNPGERLGSG-------SGGVNDIRKHRWF-----
+gene3           REFSPAHSPWNSGVTPTYAGAAWSPTTGGMSPGAGFSPAGNTDGGASPFNEGGWSPASPG
+                                            *                               
+
+gene2           -----------DYGVAPEGIIDAR------------------------------------
+gene1           --MGF------DWEGLRSRTLKP-----------------------------PILPKVS-
+gene3           DPLGALSPRTPSYGGMSPGVYSPSSPQFSMTSPHYSPTSPSYSPTSPAAGQSPVSPSYSP
+                           .:        ..                                     
+
+gene2           ------------------------------------------------------------
+gene1           ------------------------------------------------------------
+gene3           TSPSYSPTSPSYSPTSPSYSPTSPSYSPTSPSYSPTSPSYSPSSPSYSPSSPSYSPSSPR
+                                                                            
+
+gene2           ------------------------------------------------------------
+gene1           ------------------------------------------------------------
+gene3           YSPTSPTYSPTSPTYSPTSPTYSPTSPTYSPTSPSYESGGGYSPSSPKYSPSSPTYSPTS
+                                                                            
+
+gene2           -----------------DSSDRAEFTNREIIEVVEIDEKEMKIVR---------------
+gene1           -----------------NPADVTNFDNYPPDNDVPPDEFSG-------------------
+gene3           PSYSPTSPQYSPTSPQYSPSSPTYTPSSPTYNPTSPRGFSSPQYSPTSPTYSPTSPSYTP
+                                 ..:. :   .    : .     .                    
+
+gene2           ----------------------------------------------------------
+gene1           -----------------------------------------------------WDEGF
+gene3           SSPQYSPTSPTYTPSPSEQPGTSAQYSPTSPTYSPSSPTYSPASPSYSPSSPTYDPNS
+                                                                          
