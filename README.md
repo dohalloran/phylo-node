@@ -26,6 +26,7 @@ __Phylo-Node: a molecular phylogenetic toolkit using Node.js__
         - [Kalign](#kalign)
         - [PAL2NAL](#pal2nal)
         - [Slr](#slr)
+        - [Codeml](#codeml)
         - [ProtTest3](#prottest3)
         - [jModelTest2](#jmodeltest2)
         - [Pipes](#pipes)
@@ -319,6 +320,22 @@ node index.js input.paml input.trees [insert any flags from below]
 | -timemem        | summary of real time and CPU time used 1:yes 0:no      | 
 | -skipsitewise   | Skip sitewise estimation of omega                      | 
 
+
+### Codeml
+
+Run Codeml program
+
+    var base = require('../../../Wrapper_Core/base-wrap')
+    var codeml = require('./codeml.js')
+    var outFile = './Output/result.codeml' 
+    base.call_(process.argv[2], outFile, process.argv, codeml.run_)
+
+
+__Basic usage:__
+node index.js input.cnt [all parameters set by cnt file]
+    
+    node index.js test.cnt  
+    
 
 ### ProtTest3
 
