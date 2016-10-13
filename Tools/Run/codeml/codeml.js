@@ -2,6 +2,8 @@
 var exec = require('child_process').exec;
 //other flags will be pushed into Arrflags arr for PhyML
 var otherflags = [];
+//check the user's OS 
+var isWin = /^win/.test(process.platform);
 //obj function container
 var codeml = {};
 
@@ -17,7 +19,11 @@ codeml.run_ = function (myfilePath, outFile, flagArr) {
     //replace commas with spaces
     var flags = stringify.replace(/,/g, " ");
     //generate the commandline 
+    if (isWin == true) {
     var codemlCommand = 'codeml ' + myfilePath;
+    } else {
+    var codemlCommand = './codeml ' + myfilePath;
+    }
     console.log('\n' + ' running...');
     //spawn child to run exec shell
     var child = exec(codemlCommand, function (error, stdout, stderr) {
