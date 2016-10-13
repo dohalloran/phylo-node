@@ -477,10 +477,10 @@ __Note:__ if you get a permission error when runnning tests you may have to `chm
 7. Suyama M, Torrents D, Bork P (2006). PAL2NAL: robust conversion of protein sequence alignment into the corresponding codon alignments. Nucleic Acids Res. 34:W609-W612
 
 8. Massingham T, Goldman N (2005) Detecting amino acid sites under positive selection and purifying selection. Genetics 169: 1853-1762    
- 9: Yang, Z (2007) PAML 4: phylogenetic analysis by maximum likelihood. Mol Biol Evol. 24(8):1586-91. 
- 
- 10: Yang, Z (1997) PAML: a program package for phylogenetic analysis by maximum likelihood. Comput Appl Biosci. 13(5):555-6
- 
+9. Yang, Z (2007) PAML 4: phylogenetic analysis by maximum likelihood. Mol Biol Evol. 24(8):1586-91. 
+
+10. Yang, Z (1997) PAML: a program package for phylogenetic analysis by maximum likelihood. Comput Appl Biosci. 13(5):555-6
+
 11. Darriba D, Taboada GL, Doallo R, Posada D. (2011). ProtTest 3: fast selection of best-fit models of protein evolution. Bioinformatics, 27:1164-1165 
 
 12. Darriba D, Taboada GL, Doallo R, Posada D. (2012). jModelTest 2: more models, new heuristics and parallel computing. Nature Methods 9(8), 772
