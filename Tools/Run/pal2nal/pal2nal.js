@@ -1,6 +1,6 @@
 //require the following modules
 var exec = require('child_process').exec;
-//other flags will be pushed into Arrflags arr for PhyML
+//other flags will be pushed into array
 var otherflags = [];
 //obj function container
 var pal2nal = {};
