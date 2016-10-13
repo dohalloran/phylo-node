@@ -2,6 +2,8 @@
 var exec = require('child_process').exec;
 //other flags will be pushed into array
 var otherflags = [];
+//check the user's OS 
+var isWin = /^win/.test(process.platform);
 //obj function container
 var Slr = {};
 
@@ -17,7 +19,11 @@ Slr.run_ = function (myfilePath, outFile, flagArr) {
     //replace commas with spaces
     var flags = stringify.replace(/,/g, " ");
     //generate the commandline 
-    var SlrCommand = './Slr -seqfile ' + myfilePath + ' ' + flags + ' > ' + outFile;
+    if (isWin == true) {
+        var SlrCommand = 'Slr -seqfile ' + myfilePath + ' -treefile ' + flags + ' > ' + outFile;
+    } else {
+        var SlrCommand = './Slr -seqfile ' + myfilePath + ' ' + flags + ' > ' + outFile;
+    }
     console.log('\n' + ' running...');
     //spawn child to run exec shell
     var child = exec(SlrCommand, function (error, stdout, stderr) {
