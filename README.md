@@ -25,6 +25,7 @@ __Phylo-Node: a molecular phylogenetic toolkit using Node.js__
         - [Clustal Omega](#clustal-omega)
         - [Kalign](#kalign)
         - [PAL2NAL](#pal2nal)
+        - [Slr](#slr)
         - [ProtTest3](#prottest3)
         - [jModelTest2](#jmodeltest2)
         - [Pipes](#pipes)
@@ -280,12 +281,43 @@ node index.js input.aln input.fasta [insert any flags from below]
 | -output     | (clustal|paml|fasta|codon) Output format, default = clustal                     | 
 | -nogap      |  remove columns with gaps and inframe stop codons                               | 
 | -nomismatch | remove mismatched codons (mismatch between pep and cDNA) from the output        | 
-| -codontable | 1 default|2|3|4|5|6|9|10|11|12|13|14|15|16|21|22|23   NCBI GenBank codon table  | 
+| -codontable | 1 (default),2,3,4,5,6,9,10,11,12,13,14,15,16,21,22,23   NCBI GenBank codon table  | 
 | -html       | HTML output (only for the web server)                                           | 
 | -nostderr   | No STDERR messages (only for the web server)                                    | 
 
 
 __Note:__ must have Perl installed 
+
+
+### Slr
+
+Run Slr program
+
+    var base = require('../../../Wrapper_Core/base-wrap')
+    var Slr = require('./Slr.js')
+    var outFile = './Output/Slr_Results.txt'
+    base.call_(process.argv[2], outFile, process.argv, Slr.run_)
+
+
+__Basic usage:__
+node index.js input.paml input.trees [insert any flags from below]
+    
+    node index.js bglobin.paml bglobin.trees timemem 1  
+    
+| FLAG            | FUNCTION                                               | 
+| ----------------|:------------------------------------------------------:| 
+| -reoptimise     | 0 (no), 1(yes), 2(set branch lengths to random values) | 
+| -kappa          | value for kappa                                        | 
+| -omega          | Value for omega (dN/dS)                                | 
+| -branopt        | 0: fixed, 1: optimise, 2: proportional                 | 
+| -codonf         | 0: F61/F60  1: F3x4 2: F1x4                            | 
+| -freqtype       | 0, 1, 2, 3                                             | 
+| -positive_only  | 0(no) or 1(yes)                                        | 
+| -nucleof        | 0: none, 1: adjust by a constant N_{ab}.               | 
+| -aminof         | 0(constant), 1, 2                                      | 
+| -freqtype       | 0, 1, 2, 3                                             | 
+| -timemem        | summary of real time and CPU time used 1:yes 0:no      | 
+| -skipsitewise   | Skip sitewise estimation of omega                      | 
 
 
 ### ProtTest3
@@ -427,9 +459,11 @@ __Note:__ if you get a permission error when runnning tests you may have to `chm
 
 7. Suyama M, Torrents D, Bork P (2006). PAL2NAL: robust conversion of protein sequence alignment into the corresponding codon alignments. Nucleic Acids Res. 34:W609-W612
 
-8. Darriba D, Taboada GL, Doallo R, Posada D. (2011). ProtTest 3: fast selection of best-fit models of protein evolution. Bioinformatics, 27:1164-1165 
+8. Massingham T, Goldman N (2005) Detecting amino acid sites under positive selection and purifying selection. Genetics 169: 1853-1762.
 
-9. Darriba D, Taboada GL, Doallo R, Posada D. (2012). jModelTest 2: more models, new heuristics and parallel computing. Nature Methods 9(8), 772
+9. Darriba D, Taboada GL, Doallo R, Posada D. (2011). ProtTest 3: fast selection of best-fit models of protein evolution. Bioinformatics, 27:1164-1165 
+
+10. Darriba D, Taboada GL, Doallo R, Posada D. (2012). jModelTest 2: more models, new heuristics and parallel computing. Nature Methods 9(8), 772
 
 - - - - 
 ## Contributing
