@@ -1,0 +1,70 @@
+{
+   "tracks" : [
+      {
+         "chunkSize" : 20000,
+         "type" : "SequenceTrack",
+         "urlTemplate" : "seq/{refseq_dirpath}/{refseq}-",
+         "label" : "DNA",
+         "key" : "Reference sequence",
+         "category" : "Reference sequence",
+         "storeClass" : "JBrowse/Store/Sequence/StaticChunked"
+      },
+      {
+         "key" : "Protein-coding genes",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "subfeatures" : true,
+         "track" : "Genes",
+         "type" : "FeatureTrack",
+         "feature" : [
+            "gene"
+         ],
+         "category" : "Genes",
+         "autocomplete" : "all",
+         "style" : {
+            "subfeatureClasses" : {
+               "CDS" : "transcript-CDS"
+            },
+            "className" : "feature5",
+            "arrowheadClass" : "transcript-arrowhead"
+         },
+         "compress" : 0,
+         "label" : "Genes",
+         "urlTemplate" : "tracks/Genes/{refseq}/trackData.json"
+      },
+      {
+         "autocomplete" : "all",
+         "category" : "Genes",
+         "feature" : [
+            "mRNA"
+         ],
+         "compress" : 0,
+         "style" : {
+            "arrowheadClass" : "transcript-arrowhead",
+            "className" : "transcript",
+            "subfeatureClasses" : {
+               "UTR" : "transcript-UTR",
+               "CDS" : "transcript-CDS"
+            }
+         },
+         "label" : "transcript_with_no_features",
+         "urlTemplate" : "tracks/transcript_with_no_features/{refseq}/trackData.json",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "description" : 1,
+         "key" : "Exonerate predictions (misconfigured for test, and with a long description)",
+         "track" : "transcript_with_no_features",
+         "subfeatures" : true,
+         "type" : "FeatureTrack"
+      }
+   ],
+   "names" : {
+      "type" : "Hash",
+      "url" : "names/"
+   },
+   "plugins" : [
+      "NeatHTMLFeatures",
+      "NeatCanvasFeatures",
+      "HideTrackLabels"
+   ],
+   "formatVersion" : 1,
+   "dataset_id" : "yeast"
+}
