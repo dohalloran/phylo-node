@@ -1,7 +1,7 @@
 {
     "name": "phylo-node",
     "description": "Phylo-Node: a molecular phylogenetic toolkit using Node.js",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "homepage": "https://github.com/dohalloran/phylo-node",
     "author": {
         "name": "dohalloran",
