@@ -1,5 +1,5 @@
 var expect = require('chai').expect;
-var phyloTest = require('../Tools/Run/MUSCLE/index.js');
+var phyloTest = require('../Tools/Run/MUSCLE/muscle.js');
 
 describe('node-phylo-tests', function () {
     describe('object', function () {
