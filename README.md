@@ -13,7 +13,7 @@ __phylo-node: A Molecular Phylogenetic Toolkit using Node.js__
 
 # __CONTENTS__
 - - - - 
- - [Phylo-Node](#)
+ - [phylo-node](#)
 	- [Getting Started](#getting-started)
 	- [Usage](#usage)
         - [Get FASTA Sequences](#get-fasta-sequences)
@@ -497,7 +497,7 @@ __Note:__ must have MUSCLE in $PATH for pipe example
 
 ## Testing
 
-Phylo-Node was successfully tested on:
+phylo-node was successfully tested on:
 
 - [x] Microsoft Windows 7 Enterprise ver.6.1
 - [x] MacOSX El Capitan ver.10.11.5
