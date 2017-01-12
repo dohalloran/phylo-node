@@ -1,4 +1,4 @@
-# __Phylo-Node__
+# __phylo-node__
 
 [![NPM version](http://img.shields.io/npm/v/phylo-node.svg)](https://www.npmjs.com/package/phylo-node) 
 [![dependencies](https://david-dm.org/dohalloran/phylo-node.svg)](https://david-dm.org/dohalloran/Phylo-Node?view=list)
@@ -7,7 +7,7 @@
 [![GitHub issues](https://img.shields.io/github/issues/dohalloran/Phylo-Node.svg)](https://github.com/dohalloran/Phylo-Node/issues)
 [![DOI](https://zenodo.org/badge/68146573.svg)](https://zenodo.org/badge/latestdoi/68146573)
 
-__Phylo-Node: a molecular phylogenetic toolkit using Node.js__
+__phylo-node: A Molecular Phylogenetic Toolkit using Node.js__
 
 ![Phylo-Node LOGO](https://cloud.githubusercontent.com/assets/8477977/18491220/619a5754-79d3-11e6-916e-92e189e0072b.png)
 
