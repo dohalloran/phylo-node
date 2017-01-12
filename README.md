@@ -20,7 +20,9 @@ __Phylo-Node: a molecular phylogenetic toolkit using Node.js__
         - [Get Sequence information in JSON format](#get-sequence-information-in-json-format)
         - [Download executables](#download-executables)
         - [Server](#server)
-		- [PhyML](#phyml)
+        - [Bowtie2](#bowtie2)
+        - [Trimmomatic](#trimmomatic)
+        - [PhyML](#phyml)
 		- [Primer3](#primer3)
 		- [MUSCLE](#muscle)
         - [Clustal Omega](#clustal-omega)
@@ -106,6 +108,46 @@ __Basic usage:__
 Point browser to `localhost:8080`  
     
  __Note:__ to create a JBrowse server, it should be downloaded and configured as per the developer guidelines described [here] (http://jbrowse.org/install/)  
+
+### Bowtie2
+
+Run Bowtie2 program
+
+    var base = require('../../../Wrapper_Core/base-wrap')
+    var bowtie2 = require('./bowtie2')
+    base.call_(process.argv[2], process.argv[3], process.argv, bowtie2.run_)
+
+__Basic usage:__ 
+node index.js index-file -U fastQ-reads
+
+    node index.js ../../../Input_examples/index_elegans/c_elegans -U ../../../Input_examples/reads.fq
+
+### Trimmomatic
+
+Run Trimmomatic program
+
+    var base = require('../../../Wrapper_Core/base-wrap')
+    var trimmomatic = require('./trimmomatic')
+    base.call_(process.argv[2], process.argv[3], process.argv, trimmomatic.run_)
+
+__Basic usage:__ 
+node index.js path-to-jar input-file [insert any flags (from flags below)] 
+    
+    node index.js /usr/share/java/trimmomatic.jar ../../../Input_examples/reads.fq Output/outsy.fq -phred33 ILLUMINACLIP:TruSeq3-SE:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+
+| FLAG                  | DETAILS                                                            | 
+| --------------------- |:------------------------------------------------------------------:| 
+|    ILLUMINACLIP       |   Cut adapter and other illumina-specific sequences from the read  | 
+|    SLIDINGWINDOW      |   Perform a sliding window trimming                                |  
+|    LEADING            |   Cut bases off the start of a read, if below a threshold quality  | 
+|     TRAILING          |   Cut bases off the end of a read, if below a threshold quality    | 
+|    CROP               |   Cut the read to a specified length                               | 
+|    HEADCROP           |   Cut the specified number of bases from the start of the read     | 
+|    MINLEN             |   Drop the read if it is below a specified length                  | 
+|    TOPHRED33          |   Convert quality scores to Phred-33                               | 
+|    TOPHRED64          |   Convert quality scores to Phred-64                               |     
+
+__Note:__ must have Java Runtime environment and [Trimmomatic jar] (http://www.usadellab.org/cms/?page=trimmomatic)
 
 ### PhyML
 
@@ -477,29 +519,33 @@ __Note:__ if you get a permission error when runnning tests you may have to `chm
 ## Documentation
 1. Skinner M.E., Uzilov A.V., Stein L.D., Mungall C.J., Holmes I.H. (2009). JBrowse: a next-generation genome browser. Genome Research, 19(9):1630-1638
 
-2. Guindon S., Dufayard J.F., Lefort V., Anisimova M., Hordijk W., Gascuel O. (2010). New Algorithms and Methods to Estimate Maximum-Likelihood Phylogenies: Assessing the Performance of PhyML 3.0. Systematic Biology, 59(3):307-21
+2. Langmead B, Salzberg S. (2012). Fast gapped-read alignment with Bowtie 2. Nature Methods, 4;9(4):357-9
 
-3. Untergasser A, Cutcutache I, Koressaar T, Ye J, Faircloth BC, Remm M and Rozen SG. (2012). Primer3 - new capabilities and interfaces. Nucleic Acids Res. 40(15):e115 
+3. Bolger, A. M., Lohse, M., & Usadel, B. (2014). Trimmomatic: A flexible trimmer for Illumina Sequence Data. Bioinformatics, btu170
+
+4. Guindon S., Dufayard J.F., Lefort V., Anisimova M., Hordijk W., Gascuel O. (2010). New Algorithms and Methods to Estimate Maximum-Likelihood Phylogenies: Assessing the Performance of PhyML 3.0. Systematic Biology, 59(3):307-21
+
+5. Untergasser A, Cutcutache I, Koressaar T, Ye J, Faircloth BC, Remm M and Rozen SG. (2012). Primer3 - new capabilities and interfaces. Nucleic Acids Res. 40(15):e115 
  
-4. Edgar, R.C. (2004) MUSCLE: multiple sequence alignment with high accuracy and high throughput. Nucleic Acids Res. 32(5):1792-1797 
+6. Edgar, R.C. (2004) MUSCLE: multiple sequence alignment with high accuracy and high throughput. Nucleic Acids Res. 32(5):1792-1797 
 
-5. Edgar, R.C. (2004) MUSCLE: a multiple sequence alignment method with reduced time and space complexity. BMC Bioinformatics, (5)113 
+7. Edgar, R.C. (2004) MUSCLE: a multiple sequence alignment method with reduced time and space complexity. BMC Bioinformatics, (5)113 
 
-6. Sievers F, Wilm A, Dineen DG, Gibson TJ, Karplus K, Li W, Lopez R, McWilliam H, Remmert M, Söding J, Thompson JD, Higgins DG (2011). Fast, scalable generation of high-quality protein multiple sequence alignments using Clustal Omega. Molecular Systems Biology 7:539 
+8. Sievers F, Wilm A, Dineen DG, Gibson TJ, Karplus K, Li W, Lopez R, McWilliam H, Remmert M, Söding J, Thompson JD, Higgins DG (2011). Fast, scalable generation of high-quality protein multiple sequence alignments using Clustal Omega. Molecular Systems Biology 7:539 
 
-7. Lassmann T, Sonnhammer EL. (2005). Kalign--an accurate and fast multiple sequence alignment algorithm. BMC Bioinformatics. 12;6:298
+9. Lassmann T, Sonnhammer EL. (2005). Kalign--an accurate and fast multiple sequence alignment algorithm. BMC Bioinformatics. 12;6:298
 
-8. Suyama M, Torrents D, Bork P (2006). PAL2NAL: robust conversion of protein sequence alignment into the corresponding codon alignments. Nucleic Acids Res. 34:W609-W612
+10. Suyama M, Torrents D, Bork P (2006). PAL2NAL: robust conversion of protein sequence alignment into the corresponding codon alignments. Nucleic Acids Res. 34:W609-W612
 
-9. Massingham T, Goldman N (2005) Detecting amino acid sites under positive selection and purifying selection. Genetics 169: 1853-1762    
+11. Massingham T, Goldman N (2005) Detecting amino acid sites under positive selection and purifying selection. Genetics 169: 1853-1762    
 
-10. Yang, Z (2007) PAML 4: phylogenetic analysis by maximum likelihood. Mol Biol Evol. 24(8):1586-91. 
+12. Yang, Z (2007) PAML 4: phylogenetic analysis by maximum likelihood. Mol Biol Evol. 24(8):1586-91. 
 
-11. Yang, Z (1997) PAML: a program package for phylogenetic analysis by maximum likelihood. Comput Appl Biosci. 13(5):555-6
+13. Yang, Z (1997) PAML: a program package for phylogenetic analysis by maximum likelihood. Comput Appl Biosci. 13(5):555-6
 
-12. Darriba D, Taboada GL, Doallo R, Posada D. (2011). ProtTest 3: fast selection of best-fit models of protein evolution. Bioinformatics, 27:1164-1165 
+14. Darriba D, Taboada GL, Doallo R, Posada D. (2011). ProtTest 3: fast selection of best-fit models of protein evolution. Bioinformatics, 27:1164-1165 
 
-13. Darriba D, Taboada GL, Doallo R, Posada D. (2012). jModelTest 2: more models, new heuristics and parallel computing. Nature Methods 9(8), 772
+15. Darriba D, Taboada GL, Doallo R, Posada D. (2012). jModelTest 2: more models, new heuristics and parallel computing. Nature Methods 9(8), 772
 
 - - - - 
 ## Contributing
