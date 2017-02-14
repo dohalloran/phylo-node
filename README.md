@@ -70,7 +70,7 @@ Node uses [NCBI e-utilities] (http://www.ncbi.nlm.nih.gov/books/NBK25501/) to do
     
 __Basic usage:__ node index.js inputfile [list of space separated accession numbers]
 
-    node index.js NM_001028053.2 AF032112.1
+    node app.js NM_001028053.2 AF032112.1
     
 ### Get Sequence information in JSON format
 
@@ -81,7 +81,7 @@ Sequence Accession Numbers are collected as per fastA sequences above using the 
     
 __Basic usage:__ node index.js inputfile [list of space separated accession numbers]
 
-    node index.js NM_001028053.2 AF032112.1
+    node app.js NM_001028053.2 AF032112.1
 
 ### Download executables
 
@@ -92,7 +92,7 @@ Download executable files:
     
 __Basic usage:__ node index.js URL
 
-    node index.js http://www.clustal.org/omega/clustalo-1.2.2-Ubuntu-x86_64
+    node app.js http://www.clustal.org/omega/clustalo-1.2.2-Ubuntu-x86_64
     
  __Note:__ objects for other tools i.e. PhyML, Clustal Omega, and MUSCLE contain their own methods for downloading binaries (see below)  
 
@@ -120,7 +120,7 @@ Run Bowtie2 program
 __Basic usage:__ 
 node index.js index-file -U fastQ-reads
 
-    node index.js ../../../Input_examples/index_elegans/c_elegans -U ../../../Input_examples/reads.fq
+    node app.js ../../../Input_examples/index_elegans/c_elegans -U ../../../Input_examples/reads.fq
 
 ### Trimmomatic
 
@@ -133,7 +133,7 @@ Run Trimmomatic program
 __Basic usage:__ 
 node index.js path-to-jar input-file [insert any flags (from flags below)] 
     
-    node index.js /usr/share/java/trimmomatic.jar ../../../Input_examples/reads.fq Output/outsy.fq -phred33 ILLUMINACLIP:TruSeq3-SE:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+    node app.js /usr/share/java/trimmomatic.jar ../../../Input_examples/reads.fq Output/outsy.fq -phred33 ILLUMINACLIP:TruSeq3-SE:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
 
 | FLAG                  | DETAILS                                                            | 
 | --------------------- |:------------------------------------------------------------------:| 
@@ -167,7 +167,7 @@ Run phyml program
 __Basic usage:__ 
  node index.js inputfile [insert any flags (from flags below)]
 
-    node index.js example_PhyML.phy -q -d aa -m JTT -c 4 -a e
+    node app.js example_PhyML.phy -q -d aa -m JTT -c 4 -a e
     
 
 | FLAG                  | FIELD                                   | 
@@ -202,9 +202,9 @@ Run Primer3 program
     base.call_(process.argv[2], outFile, process.argv, primer3.run_)
 
 __Basic usage:__
-    node index.js filename [-flags (from table below)]
+    node app.js filename [-flags (from table below)]
 
-    node index.js example_p3 -format_output
+    node app.js example_p3 -format_output
 
 
 | FLAGS                                 |
@@ -236,9 +236,9 @@ Run MUSCLE program
 
 
 __Basic usage:__
-node index.js inputfile [insert any flags preceeded by '-' sign and seperated by a space (from flags below)]
+node app.js inputfile [insert any flags preceeded by '-' sign and seperated by a space (from flags below)]
     
-    node index.js DNA.fasta -msf -html
+    node app.js DNA.fasta -msf -html
   
   
 | FLAG          | FUNCTION                                       | 
@@ -268,9 +268,9 @@ Run Clustal Omega program
 
 
 __Basic usage:__
-node index.js inputfile [insert any flags preceeded by '--' sign and seperated by a space]
+node app.js inputfile [insert any flags preceeded by '--' sign and seperated by a space]
     
-    node index.js DNA.fasta --outfmt phy
+    node app.js DNA.fasta --outfmt phy
    
    
 
@@ -301,9 +301,9 @@ Run Kalign program
 
 
 __Basic usage:__
-node index.js inputfile [insert any flags preceeded by '-' sign and seperated by a space]
+node app.js inputfile [insert any flags preceeded by '-' sign and seperated by a space]
     
-    node index.js DNA.fasta -gpo -f 
+    node app.js DNA.fasta -gpo -f 
    
 | FLAG     | FUNCTION                                                                      | 
 | -------- |:-----------------------------------------------------------------------------:| 
@@ -326,9 +326,9 @@ Run PAL2NAL program
 
 
 __Basic usage:__
-node index.js input.aln input.fasta [insert any flags from below]
+node app.js input.aln input.fasta [insert any flags from below]
     
-    node index.js DNA.aln DNA.fasta -nomismatch 
+    node app.js DNA.aln DNA.fasta -nomismatch 
   
   
 | FLAG        | FUNCTION                                                                        | 
@@ -357,9 +357,9 @@ Run Slr program
 
 
 __Basic usage:__
-node index.js input.paml input.trees [insert any flags from below]
+node app.js input.paml input.trees [insert any flags from below]
     
-    node index.js bglobin.paml bglobin.trees timemem 1  
+    node app.js bglobin.paml bglobin.trees timemem 1  
     
 | FLAG            | FUNCTION                                               | 
 | ----------------|:------------------------------------------------------:| 
@@ -388,9 +388,9 @@ Run Codeml program
 
 
 __Basic usage:__
-node index.js input.cnt [all parameters set by cnt file]
+node app.js input.cnt [all parameters set by cnt file]
     
-    node index.js test.cnt  
+    node app.js test.cnt  
     
 
 ### ProtTest3
@@ -402,9 +402,9 @@ Run ProtTest3 program
     base.call_(process.argv[2], process.argv[3], process.argv, prottest.run_)
 
 __Basic usage:__ 
-node index.js path-to-jar input-file [insert any flags (from flags below)] 
+node app.js path-to-jar input-file [insert any flags (from flags below)] 
 
-    node index.js /path-to-jar/prottest-3.4.2.jar alignment -all-matrices -all-distributions -o example.txt
+    node app.js /path-to-jar/prottest-3.4.2.jar alignment -all-matrices -all-distributions -o example.txt
 
 | FLAG                  | DETAILS                                           | 
 | --------------------- |:-------------------------------------------------:| 
@@ -444,9 +444,9 @@ Run jModelTest2 program
     base.call_(process.argv[2], process.argv[3], process.argv, jmodeltest2.run_)
 
 __Basic usage:__ 
-node index.js path-to-jar input-file -o output-file [insert any flags (from flags below)] 
+node app.js path-to-jar input-file -o output-file [insert any flags (from flags below)] 
 
-    node index.js /path-to-jar/jModelTest.jar aP6.fas -o Output/Results.txt -f -i -g 4 -s 11 -AIC -a
+    node app.js /path-to-jar/jModelTest.jar aP6.fas -o Output/Results.txt -f -i -g 4 -s 11 -AIC -a
     
 
 | FLAG              | DETAILS                                                                | 
