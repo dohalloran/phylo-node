@@ -68,7 +68,7 @@ Node uses [NCBI e-utilities] (http://www.ncbi.nlm.nih.gov/books/NBK25501/) to do
     var fetch = require('./fetch_seqs')
     fetch.fasta(process.argv, fetch.renameFile)
     
-__Basic usage:__ node index.js inputfile [list of space separated accession numbers]
+__Basic usage:__ node app.js inputfile [list of space separated accession numbers]
 
     node app.js NM_001028053.2 AF032112.1
     
@@ -79,7 +79,7 @@ Sequence Accession Numbers are collected as per fastA sequences above using the 
     var fetch = require('./fetch_seqs')
     fetch.genbank_json(process.argv)
     
-__Basic usage:__ node index.js inputfile [list of space separated accession numbers]
+__Basic usage:__ node app.js inputfile [list of space separated accession numbers]
 
     node app.js NM_001028053.2 AF032112.1
 
@@ -90,7 +90,7 @@ Download executable files:
     var get_executable = require('./get_executable.js')
     get_executable.software(process.argv[2])
     
-__Basic usage:__ node index.js URL
+__Basic usage:__ node app.js URL
 
     node app.js http://www.clustal.org/omega/clustalo-1.2.2-Ubuntu-x86_64
     
@@ -118,7 +118,7 @@ Run Bowtie2 program
     base.call_(process.argv[2], process.argv[3], process.argv, bowtie2.run_)
 
 __Basic usage:__ 
-node index.js index-file -U fastQ-reads
+node app.js index-file -U fastQ-reads
 
     node app.js ../../../Input_examples/index_elegans/c_elegans -U ../../../Input_examples/reads.fq
 
@@ -131,7 +131,7 @@ Run Trimmomatic program
     base.call_(process.argv[2], process.argv[3], process.argv, trimmomatic.run_)
 
 __Basic usage:__ 
-node index.js path-to-jar input-file [insert any flags (from flags below)] 
+node app.js path-to-jar input-file [insert any flags (from flags below)] 
     
     node app.js /usr/share/java/trimmomatic.jar ../../../Input_examples/reads.fq Output/outsy.fq -phred33 ILLUMINACLIP:TruSeq3-SE:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
 
@@ -165,7 +165,7 @@ Run phyml program
 
 
 __Basic usage:__ 
- node index.js inputfile [insert any flags (from flags below)]
+ node app.js inputfile [insert any flags (from flags below)]
 
     node app.js example_PhyML.phy -q -d aa -m JTT -c 4 -a e
     
