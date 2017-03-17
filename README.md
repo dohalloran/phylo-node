@@ -63,7 +63,7 @@ __ensure executables are in your $PATH__
 
 Sequence Accession Numbers are collected from the commandline separated by a space (not a comma)
  
-Node uses [NCBI e-utilities] (http://www.ncbi.nlm.nih.gov/books/NBK25501/) to download sequences in fastA format:
+Node uses [NCBI e-utilities](http://www.ncbi.nlm.nih.gov/books/NBK25501/) to download sequences in fastA format:
     
     var fetch = require('./fetch_seqs')
     fetch.fasta(process.argv, fetch.renameFile)
@@ -107,7 +107,7 @@ __Basic usage:__
     
 Point browser to `localhost:8080`  
     
- __Note:__ to create a JBrowse server, it should be downloaded and configured as per the developer guidelines described [here] (http://jbrowse.org/install/)  
+ __Note:__ to create a JBrowse server, it should be downloaded and configured as per the developer guidelines described [here](http://jbrowse.org/install/)  
 
 ### Bowtie2
 
@@ -147,7 +147,7 @@ node app.js path-to-jar input-file [insert any flags (from flags below)]
 |    TOPHRED33          |   Convert quality scores to Phred-33                               | 
 |    TOPHRED64          |   Convert quality scores to Phred-64                               |     
 
-__Note:__ must have Java Runtime environment and [Trimmomatic jar] (http://www.usadellab.org/cms/?page=trimmomatic)
+__Note:__ must have Java Runtime environment and [Trimmomatic jar](http://www.usadellab.org/cms/?page=trimmomatic)
 
 ### PhyML
 
@@ -432,7 +432,7 @@ node app.js path-to-jar input-file [insert any flags (from flags below)]
 |    -verbose           |       Verbose mode [default: false]               | 
 
 
-__Note:__ must have Java Runtime environment and [ProtTest3 jar] (https://github.com/ddarriba/prottest3)
+__Note:__ must have Java Runtime environment and [ProtTest3 jar](https://github.com/ddarriba/prottest3)
 
 
 ### jModelTest2
@@ -479,7 +479,7 @@ node app.js path-to-jar input-file -o output-file [insert any flags (from flags 
 |    -z             |           Strict consensus type for model-averaged phylogeny           |
 
 
-__Note:__ must have Java Runtime environment and [jModelTest2 jar] (https://github.com/ddarriba/jmodeltest2)
+__Note:__ must have Java Runtime environment and [jModelTest2 jar](https://github.com/ddarriba/jmodeltest2)
 
 ## Pipes 
 Commands can be chained in series to pipe data between applications:
