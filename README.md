@@ -17,7 +17,7 @@ __phylo-node: A Molecular Phylogenetic Toolkit using Node.js__
 	- [Getting Started](#getting-started)
 	- [Usage](#usage)
         - [Get FASTA Sequences](#get-fasta-sequences)
-        - [Get Sequence information in ASN.1 format](#get-sequence-information-in-asn.1-format)
+        - [Get Sequence information in ASN_1 format](#get-sequence-information-in-asn_1-format)
         - [Download executables](#download-executables)
         - [Server](#server)
         - [Bowtie2](#bowtie2)
