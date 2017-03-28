@@ -17,7 +17,7 @@ __phylo-node: A Molecular Phylogenetic Toolkit using Node.js__
 	- [Getting Started](#getting-started)
 	- [Usage](#usage)
         - [Get FASTA Sequences](#get-fasta-sequences)
-        - [Get Sequence information in JSON format](#get-sequence-information-in-json-format)
+        - [Get Sequence information in ASN.1 format](#get-sequence-information-in-asn.1-format)
         - [Download executables](#download-executables)
         - [Server](#server)
         - [Bowtie2](#bowtie2)
@@ -72,7 +72,7 @@ __Basic usage:__ node app.js inputfile [list of space separated accession number
 
     node app.js NM_001028053.2 AF032112.1
     
-### Get Sequence information in JSON format
+### Get Sequence information in ASN.1 format
 
 Sequence Accession Numbers are collected as per fastA sequences above using the `genbank_json` method:
     
