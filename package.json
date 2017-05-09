@@ -22,9 +22,9 @@
   ],
     "main": "index.js",
     "dependencies": {
-        "download": "^5.0.2",
+        "download": "^6.0.0",
         "express": "^4.15.2",
-        "socket.io": "^1.4.0"
+        "socket.io": "^2.0.1"
     },
     "scripts": {
         "test": "mocha Test/index_test.js"
@@ -39,6 +39,6 @@
     "license": "MIT",
     "devDependencies": {
         "chai": "^3.5.0",
-        "mocha": "^3.0.2"
+        "mocha": "^3.3.0"
     }
 }
