@@ -33,7 +33,7 @@ fetch_seqs.fasta = function (genes, callback) {
 //renames file to something manageable 
 //and adds fastA extension for easy piping
 fetch_seqs.renameFile = function (sequences, name) {
-    fs.renameSync('efetch.fcgi!db=nuccore&id=' + sequences + '&rettype=fasta&retmode=text', name + '.fasta');
+    fs.renameSync('sequence.fasta', name + '.fasta');
     console.log('\n' + ' truncated filename to ' + name + '.fasta' + '\n');
 }
 
