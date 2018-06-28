@@ -17,7 +17,7 @@ bowtie2.run_ = function (myfilePath, outFile, flagArr) {
     //replace commas with spaces
     var flags = stringify.replace(/,/g, " ");
     //generate the commandline 
-    var bowtie2Command = 'bowtie2 -x ' + myfilePath + ' -S ' + outFile + ' ' + flags;
+    var bowtie2Command = './bowtie2 -x ' + myfilePath + ' -S ' + outFile + ' ' + flags;
     console.log('\n' + ' running...');
     //spawn child to run exec shell
     var child = exec(bowtie2Command, function (error, stdout, stderr) {
