@@ -25,7 +25,7 @@ clustal_Omega.run_ = function (myfilePath, outFile, flagArr) {
     //replace commas with spaces
     var flags = stringify.replace(/,/g, " ");
     //generate the commandline 
-    var alignCommand = 'clustalo -i ' + myfilePath + ' -o ' + outFile + ' ' + flags;
+    var alignCommand = './clustalo -i ' + myfilePath + ' -o ' + outFile + ' ' + flags;
     console.log('\n' + ' running...');
     //spawn child to run exec shell
     var child = exec(alignCommand, function (error, stdout, stderr) {
