@@ -42,7 +42,6 @@ __phylo-node: A Molecular Phylogenetic Toolkit using Node.js__
  
 __Click on Demo to get full length video__ 
 
- ![Demo Video](https://media.giphy.com/media/7kn27lnYSAE9O/giphy.gif)  
  
 - - - - 
 
