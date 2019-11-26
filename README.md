@@ -40,9 +40,6 @@ __phylo-node: A Molecular Phylogenetic Toolkit using Node.js__
 
 - - - - 
  
-__Click on Demo to get full length video__ 
-
- 
 - - - - 
 
 ### Getting Started
